@@ -2,7 +2,7 @@
 //Triple-slash directives are single-line comments containing a single XML tag. The contents of the comment are used as compiler directives.
 
 
-//nightwatch run cmd
+//nightwatch run cmd 
 //nightwatch tests/demo1.js 
 //<reference path="c:/NODEJS/workSpace/vs-intellisense-definitions.js" />
 
@@ -20,7 +20,7 @@ module.exports = {
       .pause(1000)
       .verify.containsText('#main', 'Night Watch')
       //.assert.containsText
-      
+      .verify.containsText('#main', 'Night Watch')
       .end();
     },
 
