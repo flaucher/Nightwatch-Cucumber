@@ -20,7 +20,7 @@ module.exports = {
       .pause(1000)
       .verify.containsText('#main', 'Night Watch')
       //.assert.containsText
-      .verify.containsText('#main', 'Night Watch')
+      
       .end();
     },
 
