@@ -16,7 +16,7 @@ module.exports = {
       .click('button[name=btnG]')
       .pause(1000)
       .verify.containsText('#main', 'roosevelt')
-      //.assert.containsText
+      .verify.containsText('#main', 'roosevelt')
       
       .end();
     },
