@@ -12,11 +12,12 @@
    
   "selenium" : {
     "start_process" : true,
-    "server_path" : "C:/Selenium/selenium-server-standalone-2.53.1.jar",
+    "server_path" : "C:/Selenium/sss_3.0.1.jar",
     "log_path" : "",
     "host" : "127.0.0.1",
     "port" : 4444,
     "cli_args" : {
+        "webdriver.gecko.driver" : "c:/selenium/geckodriver.exe",
       "webdriver.chrome.driver" : "C:/Selenium/chromedriver.exe",
       "webdriver.ie.driver" : "C:/Selenium/IEDriverServer.exe"
     }
@@ -35,6 +36,7 @@
       "detailed_output":false,
       "desiredCapabilities": {
         "browserName": "firefox",
+        "marionette": true,
         "javascriptEnabled": true,
         "acceptSslCerts": true
       }
@@ -43,6 +45,7 @@
     "chrome" : {
       "desiredCapabilities": {
         "browserName": "chrome",
+        "marionette": true,
         "javascriptEnabled": true,
         "acceptSslCerts": true
       }
